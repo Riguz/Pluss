@@ -2,7 +2,7 @@ var pluss = angular.module('navegacion', ['ngRoute']);
 
 pluss.config(["$routeProvider", function ($routeProvider) {
     $routeProvider.when("/", {
-        templateUrl: "plantillas/inicio.html"
+        templateUrl: "plantillas/login.html"
     })
         .when("/cli-nue", {
             templateUrl: "plantillas/cli-nue.html"
