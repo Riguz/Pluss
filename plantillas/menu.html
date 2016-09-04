@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" ng-controller="navegacionControl">
+        <a class="navbar-brand">Pluss</a>
+        <ul class="nav navbar-nav">
+            <li ng-class="{active:esActivo('/')}"><a href="#/"><i class="fa fa-home" aria-hidden="true"></i> Inicio </a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-building-o" aria-hidden="true"></i> Clientes <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ng-class="{active:esActivo('/cot')}"><a href="#/cot">Cotizacion</a></li>
+                    <li ng-class="{active:esActivo('/cli-nue')}"><a href="#/cli-nue">Nuevo</a></li>
+                    <li ng-class="{active:esActivo('/cli-adi')}"><a href="#/cli-adi">Adicionar</a></li>
+                    <li ng-class="{active:esActivo('/cli-det')}"><a href="#/cli-det">Detalles</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-laptop" aria-hidden="true"></i> Dispositivos <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ng-class="{active:esActivo('/equ-ing')}"><a href="#/equ-ing">Ingreso</a></li>
+                    <li ng-class="{active:esActivo('/equ-sal')}"><a href="#/equ-sal">Salida</a></li>
+                    <li ng-class="{active:esActivo('/equ-inv')}"><a href="#/equ-inv">Inventario</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i> Material <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ng-class="{active:esActivo('/mat-ing')}"><a href="#/mat-ing">Ingreso</a></li>
+                    <li ng-class="{active:esActivo('/mat-sal')}"><a href="#/mat-sal">Salida</a></li>
+                    <li ng-class="{active:esActivo('/mat-inv')}"><a href="#/mat-inv">Inventario</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wrench" aria-hidden="true"></i> Soporte <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ng-class="{active:esActivo('/sop-nue')}"><a href="#/sop-nue">Nuevo</a></li>
+                    <li ng-class="{active:esActivo('/sop-con')}"><a href="#/sop-con">Concluir</a></li>
+                    <li ng-class="{active:esActivo('/sop-det')}"><a href="#/sop-det">Detalles</a></li>
+                </ul>
+            </li>                
+        </ul>
+    </div>
+</nav>
